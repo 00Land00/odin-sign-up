@@ -45,34 +45,46 @@
 
           <div>
             <label for="first-name" name="user_firstname">FIRST NAME</label>
-            <input id="first-name" type="text" />
+            <input id="first-name" type="text" required />
+            <small data-help="* Must only contain alphabets"></small>
           </div>
 
           <div>
             <label for="last-name" name="user_lastname">LAST NAME</label>
-            <input id="last-name" type="text" />
+            <input id="last-name" type="text" required />
+            <small data-help="* Must only contain alphabets"></small>
           </div>
 
           <div>
             <label for="email" name="user_email">EMAIL</label>
-            <input id="email" type="email" />
+            <input id="email" type="email" required />
+            <small data-help="* Must be a valid email format"></small>
           </div>
 
           <div>
             <label for="phone" name="user_phone">PHONE NUMBER</label>
-            <input id="phone" type="text" />
+            <input
+              id="phone"
+              type="text"
+              pattern="^\d{3}-\d{3}-\d{4}$"
+              title="XXX-XXX-XXXX"
+              required
+            />
+            <small data-help="* Must be of the form XXX-XXX-XXXX"></small>
           </div>
 
           <div>
             <label for="password" name="user_password">PASSWORD</label>
-            <input id="password" type="password" />
+            <input id="password" type="password" required />
+            <small data-help="* Passwords do not match"></small>
           </div>
 
           <div>
             <label for="confirm-password" name="confirm_pass"
               >CONFIRM PASSWORD</label
             >
-            <input id="confirm-password" type="password" />
+            <input id="confirm-password" type="password" required />
+            <small data-help="* Passwords do not match"></small>
           </div>
         </fieldset>
         <div>
