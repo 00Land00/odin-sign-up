@@ -11,11 +11,15 @@
 
 * {
   margin: 0;
+  padding: 0;
 }
 
 body {
-  font-size: calc(0.75rem + 1.5vw);
+  font-family: var(--main-font, system-ui);
+  font-weight: normal;
+  font-style: normal;
   line-height: 1.5;
+
   -webkit-font-smoothing: antialiased;
 }
 

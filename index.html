@@ -6,7 +6,9 @@
     <title>Odin - Sign Up</title>
     <link rel="stylesheet" href="styles/fonts.css" />
     <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/img-panel.css" />
+    <link rel="stylesheet" href="styles/form-section.css" />
   </head>
   <body>
     <div id="img-panel">
@@ -27,6 +29,57 @@
           >Unsplash</a
         >
       </p>
+    </div>
+    <div id="form-section">
+      <header>
+        <h3>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. <br />
+          Sign up <em>now</em> to get started.
+        </h3>
+        <h3>You <em>know</em> you want to.</h3>
+      </header>
+      <form action="/sign-up" method="POST" id="sign-up">
+        <fieldset>
+          <legend>Let's do this!</legend>
+
+          <div>
+            <label for="first-name" name="user_firstname">FIRST NAME</label>
+            <input id="first-name" type="text" />
+          </div>
+
+          <div>
+            <label for="last-name" name="user_lastname">LAST NAME</label>
+            <input id="last-name" type="text" />
+          </div>
+
+          <div>
+            <label for="email" name="user_email">EMAIL</label>
+            <input id="email" type="email" />
+          </div>
+
+          <div>
+            <label for="phone" name="user_phone">PHONE NUMBER</label>
+            <input id="phone" type="text" />
+          </div>
+
+          <div>
+            <label for="password" name="user_password">PASSWORD</label>
+            <input id="password" type="password" />
+          </div>
+
+          <div>
+            <label for="confirm-password" name="confirm_pass"
+              >CONFIRM PASSWORD</label
+            >
+            <input id="confirm-password" type="password" />
+          </div>
+        </fieldset>
+        <div>
+          <button type="submit">Create Account</button>
+          <p>Already have an account? <a href="/sign-in">Log in</a></p>
+        </div>
+      </form>
     </div>
   </body>
 </html>

@@ -1,0 +1,96 @@
+#form-section {
+  position: relative;
+  width: 50vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  padding-left: 3vw;
+}
+
+header > h3, legend {
+  font-size: calc(1rem + 0.5vw);
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.1;
+  letter-spacing: -0.075rem;
+}
+
+header > h3 + h3 {
+  margin-top: 3vh;
+}
+
+#sign-up {
+  margin-top: 7vh;
+  
+  color: #1F2937;
+  background-color: white;
+}
+
+fieldset {
+  width: 85%;
+  padding: 4vw 0 2vw 3vw;
+  border: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vh 5vw;
+}
+
+legend {
+  position: relative;
+  top: 25px;
+}
+
+label {
+  display: block;
+
+  font-size: calc(0.15rem + 0.5vw);
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+input {
+  width: 17vw;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.1rem;
+
+  font-size: calc(0.5rem + 0.5vw);
+
+  border: 1px solid #f0f0f0;
+}
+
+fieldset + div {
+  padding-left: 3vw;
+
+  background-color: #F9FAFB;
+}
+
+button[type="submit"] {
+  margin-top: 2vw;
+  padding: 1vh 5vw;
+  border: 1px solid #7642a1;
+  border-radius: 0.6rem;
+
+  font-weight: 700;
+  letter-spacing: -0.05rem;
+
+  color: white;
+  background-color: #7642a1;
+}
+
+button[type="submit"] + p {
+  margin-top: 2vw;
+
+  font-weight: 600;
+  color: #1F2937;
+}
+
+button[type="submit"] + p a {
+  color: #7642a1;
+  text-decoration: none;
+}
