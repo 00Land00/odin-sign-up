@@ -12,8 +12,8 @@ header {
   padding-left: 3vw;
 }
 
-header > h3, legend {
-  font-size: calc(1rem + 0.5vw);
+h3 {
+  font-size: calc(0.8rem + 0.5vw);
   font-weight: 600;
   font-style: normal;
   line-height: 1.1;
@@ -31,19 +31,30 @@ header > h3 + h3 {
   background-color: white;
 }
 
+#field-ctnr {
+  position: relative;
+  width: 100%;
+  padding: 2vw 0 2vw 3vw;
+  box-shadow: 0 3px 3px #d3d3d3;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vh;
+
+  z-index: 1;
+}
+
 fieldset {
-  width: 85%;
-  padding: 4vw 0 2vw 3vw;
   border: none;
 
   display: flex;
-  flex-wrap: wrap;
-  gap: 2vh 5vw;
+  column-gap: 5vw;
 }
 
-legend {
+#sign-up > h3 {
   position: relative;
-  top: 25px;
+  top: 15px;
+  margin-left: 3vw;
 }
 
 label {
@@ -55,17 +66,17 @@ label {
 }
 
 input {
-  width: 17vw;
-  padding: 0.1rem 0.5rem;
+  width: 14vw;
+  padding: 0 0.5rem;
+  border: 1px solid #7a7a7a;
   border-radius: 0.2rem;
 
   font-size: calc(0.5rem + 0.5vw);
-
-  border: 1px solid #f0f0f0;
 }
 
 input:focus {
   border: 1px solid #242ca8;
+  background-color: white;
 }
 
 input:user-invalid {
@@ -82,7 +93,8 @@ input:user-invalid + small:after {
   content: attr(data-help);
 }
 
-fieldset + div {
+#submit-ctnr {
+  position: relative;
   padding-left: 3vw;
 
   background-color: #F9FAFB;
@@ -90,7 +102,7 @@ fieldset + div {
 
 button[type="submit"] {
   margin-top: 2vw;
-  padding: 1vh 5vw;
+  padding: 1vh 3vw;
   border: 1px solid #7642a1;
   border-radius: 0.6rem;
 
