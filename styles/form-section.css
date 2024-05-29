@@ -83,7 +83,7 @@ input:user-invalid {
   border: 1px solid #ff5858;
 }
 
-input:user-invalid + small:after {
+input:user-invalid + small::after {
   display: block;
 
   font-size: calc(0.25rem + 0.4vw);
